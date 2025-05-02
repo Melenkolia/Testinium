@@ -1,4 +1,0 @@
-{
-  "Phone": "5364963744",
-  "Password": "Elohab.41"
-}

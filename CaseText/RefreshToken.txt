@@ -1,4 +1,0 @@
-{
-  "RefreshToken": "@RefreshToken@",
-  "Phone": "5343123073"
-}

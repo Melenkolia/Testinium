@@ -1,9 +1,0 @@
-{
-  "FullName": "Sinan AY",
-  "Email": "Sinan@parsarge.com",
-  "CompanyName": "AY Nakliyat",
-  "JobTitle": "Co Founder",
-  "Phone": "5364963744",
-  "Password": "Elohab.41",
-  "PasswordRetype": "Elohab.41"
-}

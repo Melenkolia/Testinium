@@ -1,5 +1,0 @@
- {
-  "deviceID": "123456",
-  "startDate": 0,
-  "endDate": 0
-}
