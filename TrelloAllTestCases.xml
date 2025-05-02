@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/MONSTER/IdeaProjects/TestiniumTrelloHomework">
+        <classes>
+            <class name="TestCases_Trello.TrelloAllTestCases">
+                <methods>
+                    <include name="CreateBoard"/>
+                    <include name="GetBoardList"/>
+                    <include name="CreateCard1"/>
+                    <include name="CreateCard2"/>
+                    <include name="UpdateRandomCard"/>
+                    <include name="DeleteCard1"/>
+                    <include name="DeleteCard2"/>
+                    <include name="DeleteBoard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

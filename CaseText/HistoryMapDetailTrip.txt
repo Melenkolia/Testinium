@@ -1,0 +1,6 @@
+{
+"DeviceID":"@DeviceID@",
+"TripID":"@TripID@",
+"DeviceName":"41Pars42"
+
+}

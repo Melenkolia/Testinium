@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/sinan/Desktop/TestiniumTrelloHomework">
+        <classes>
+            <class name="TestCases_Trello.TrelloAllTestCases">
+                <methods>
+                    <include name="Trello_CreateBoard"/>
+                    <include name="Trello_GetBoardList"/>
+                    <include name="Trello_CreateCard_Yapilacaklar"/>
+                    <include name="Trello_CreateCard_Yapiliyor"/>
+                    <include name="Trello_UpdateRandomCard"/>
+                    <include name="Trello_DeleteCard_Yapilacaklar"/>
+                    <include name="Trello_DeleteCard_Yapiliyor"/>
+                    <include name="Trello_DeleteBoard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

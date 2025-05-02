@@ -1,0 +1,5 @@
+{
+  "Phone": "",
+  "DeviceName": "Deneme",
+  "DeviceIMEI": "123456"
+}
