@@ -29,8 +29,7 @@ public class TrelloAllTestCases extends Config_Setting implements AllEndPoints {
         HashMap<String, Object> boardRequestBody = new HashMap<>();
         boardRequestBody.put("name", "Sinan AY Board Example Testinium");
         boardRequestBody.put("key", config.getProperty("Key"));
-//        boardRequestBody.put("token", config.getProperty("Token"));
-        boardRequestBody.put("token", "ATTAf66f41c4bc935bc5082025ace437953ce7c2456f71753a27f7355401572a40794F27E3F7");
+        boardRequestBody.put("token", config.getProperty("Token"));
 
         Response createBoard = trelloCreateBoard("/1/boards/", boardRequestBody);
         assertions.verifyCreateBoardResponse(createBoard, "Sinan AY Board Example Testinium");
@@ -46,7 +45,7 @@ public class TrelloAllTestCases extends Config_Setting implements AllEndPoints {
 
         HashMap<String, Object> listRequestBody = new HashMap<>();
         listRequestBody.put("key", config.getProperty("Key"));
-        listRequestBody.put("token", "ATTAf66f41c4bc935bc5082025ace437953ce7c2456f71753a27f7355401572a40794F27E3F7");
+        listRequestBody.put("token", config.getProperty("Token"));
 
         Response getList = trelloGetList("/1/boards/{id}/lists", listRequestBody, boardID);
 
@@ -68,7 +67,7 @@ public class TrelloAllTestCases extends Config_Setting implements AllEndPoints {
 
         HashMap<String, Object> cardRequestBody1 = new HashMap<>();
         cardRequestBody1.put("key", config.getProperty("Key"));
-        cardRequestBody1.put("token", "ATTAf66f41c4bc935bc5082025ace437953ce7c2456f71753a27f7355401572a40794F27E3F7");
+        cardRequestBody1.put("token", config.getProperty("Token"));
         cardRequestBody1.put("name", cardName1);
         cardRequestBody1.put("idList", listID1);
 
@@ -89,7 +88,7 @@ public class TrelloAllTestCases extends Config_Setting implements AllEndPoints {
 
         HashMap<String, Object> cardRequestBody2 = new HashMap();
         cardRequestBody2.put("key", config.getProperty("Key"));
-        cardRequestBody2.put("token", "ATTAf66f41c4bc935bc5082025ace437953ce7c2456f71753a27f7355401572a40794F27E3F7");
+        cardRequestBody2.put("token", config.getProperty("Token"));
         cardRequestBody2.put("name", cardName2);
         cardRequestBody2.put("idList", listID2);
 
@@ -115,7 +114,7 @@ public class TrelloAllTestCases extends Config_Setting implements AllEndPoints {
 
         HashMap<String, Object> cardUpdateRequestBody = new HashMap();
         cardUpdateRequestBody.put("key", config.getProperty("Key"));
-        cardUpdateRequestBody.put("token", "ATTAf66f41c4bc935bc5082025ace437953ce7c2456f71753a27f7355401572a40794F27E3F7");
+        cardUpdateRequestBody.put("token", config.getProperty("Token"));
         cardUpdateRequestBody.put("name", cardName3);
 
        Response updateCard = trelloUpdateCard("/1/cards/{id}", cardUpdateRequestBody,randomCardOption);
@@ -131,7 +130,7 @@ public class TrelloAllTestCases extends Config_Setting implements AllEndPoints {
 
         HashMap<String, Object> cardDeleteRequestBody1 = new HashMap();
         cardDeleteRequestBody1.put("key", config.getProperty("Key"));
-        cardDeleteRequestBody1.put("token", "ATTAf66f41c4bc935bc5082025ace437953ce7c2456f71753a27f7355401572a40794F27E3F7");
+        cardDeleteRequestBody1.put("token", config.getProperty("Token"));
 
         Response deleteCard = trelloDeleteCard("/1/cards/{id}", cardDeleteRequestBody1,cardID1);
 
@@ -146,7 +145,7 @@ public class TrelloAllTestCases extends Config_Setting implements AllEndPoints {
 
         HashMap<String, Object> cardDeleteRequestBody2 = new HashMap();
         cardDeleteRequestBody2.put("key", config.getProperty("Key"));
-        cardDeleteRequestBody2.put("token", "ATTAf66f41c4bc935bc5082025ace437953ce7c2456f71753a27f7355401572a40794F27E3F7");
+        cardDeleteRequestBody2.put("token", config.getProperty("Token"));
 
 
         Response deleteCard = trelloDeleteCard("/1/cards/{id}", cardDeleteRequestBody2,cardID2);
@@ -163,7 +162,7 @@ public class TrelloAllTestCases extends Config_Setting implements AllEndPoints {
 
         HashMap<String, Object> boardDeleteRequestBody = new HashMap();
         boardDeleteRequestBody.put("key", config.getProperty("Key"));
-        boardDeleteRequestBody.put("token", "ATTAf66f41c4bc935bc5082025ace437953ce7c2456f71753a27f7355401572a40794F27E3F7");
+        boardDeleteRequestBody.put("token", config.getProperty("Token"));
 
 
         Response deleteBoard = trelloDeleteBoard("/1/boards/{id}", boardDeleteRequestBody,boardID);
